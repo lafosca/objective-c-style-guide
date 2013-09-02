@@ -38,17 +38,17 @@ Here are some of the documents from Apple that informed the style guide. If some
 
 ## Dot-Notation Syntax
 
-Dot-notation should **always** be used for accessing and mutating properties. Bracket notation is preferred in all other instances.
+Dot-notation should be used for accessing properties. Brackets will be used in case of mutating them and all other cases.
 
 **For example:**
 ```objc
-view.backgroundColor = [UIColor orangeColor];
+[view setBackgroundColor:[UIColor orangeColor]];
 [UIApplication sharedApplication].delegate;
 ```
 
 **Not:**
 ```objc
-[view setBackgroundColor:[UIColor orangeColor]];
+view.BackgroundColor = [UIColor orangeColor];
 UIApplication.sharedApplication.delegate;
 ```
 
